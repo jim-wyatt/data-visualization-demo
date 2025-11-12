@@ -98,9 +98,38 @@ Notes and troubleshooting
 Customization
 - You can change the PDF output name or paper size by editing the headless Chromium command or the helper cell in the notebook. If you want, I can add optional arguments (paper size, margins, scale) to the notebook helper and expose them as variables.
 
-If you want me to:
-- run the notebook export here and produce a PDF (I can attempt to run the helper cell if Chromium/LaTeX is installed in this environment),
-- or add extra automation (Playwright or Puppeteer example) — tell me which and I'll add it.
+Documentation Site (mdbook)
+This repository includes **mdbook** support for a complete, searchable documentation site. The site covers:
+- Installation and setup guides.
+- Detailed explanations of all visualization techniques.
+- Step-by-step export instructions.
+- Troubleshooting and tips.
+
+### Building and Serving the Documentation
+
+First, install mdbook (if not already installed):
+
+```bash
+cargo install mdbook
+# or if you have mdbook via package manager:
+# sudo apt install mdbook  (Debian/Ubuntu)
+# brew install mdbook      (macOS)
+```
+
+Then, from the project directory:
+
+```bash
+# Serve locally at http://localhost:3000
+mdbook serve
+
+# Or build static HTML (output in ./book/)
+mdbook build
+```
+
+The documentation provides the same information as the README in a more organized, navigable format. Useful for:
+- Exploring examples without running Jupyter.
+- Sharing with non-technical stakeholders (static HTML).
+- Maintaining detailed reference material.
 
 License
-This demo is provided as-is for learning and experimentation. No license specified.
+This demo is provided as-is for learning and experimentation. MIT License — see `LICENSE` file.

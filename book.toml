@@ -1,0 +1,22 @@
+[book]
+title = "Data Visualization Techniques Demo"
+authors = ["jim-wyatt"]
+description = "A comprehensive guide to data visualization with Matplotlib, Seaborn, Plotly, and more."
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = true
+
+[output.html]
+theme = "default"
+default-theme = "light"
+preferred-dark-theme = "coal"
+mathjax-support = true
+
+[output.html.fold]
+enable = false
+
+[output.html.playground]
+editable = false
