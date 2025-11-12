@@ -2,6 +2,8 @@
 
 # Data Visualization Techniques Demo
 
+Master data visualization across Python's top libraries.
+
 This repository contains a Jupyter Notebook demonstrating a variety of data visualization techniques using Matplotlib, Seaborn, and Plotly. It includes examples for static plots, interactive Plotly exports, datashader usage for very large datasets, and helpful utilities for exporting the notebook to PDF.
 
 Files of interest
