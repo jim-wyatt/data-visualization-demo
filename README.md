@@ -1,3 +1,5 @@
+[![Deploy mdBook site to Pages](https://github.com/jim-wyatt/data-visualization-demo/actions/workflows/mdbook.yml/badge.svg)](https://github.com/jim-wyatt/data-visualization-demo/actions/workflows/mdbook.yml)
+
 # Data Visualization Techniques Demo
 
 This repository contains a Jupyter Notebook demonstrating a variety of data visualization techniques using Matplotlib, Seaborn, and Plotly. It includes examples for static plots, interactive Plotly exports, datashader usage for very large datasets, and helpful utilities for exporting the notebook to PDF.
