@@ -17,7 +17,8 @@ The notebook plots the distribution of **total bill** from the tips dataset:
 ## Key Code Snippet
 
 ```python
-sns.histplot(tips['total_bill'], bins=30, kde=True, stat='density', ax=ax, color='C2')
+# Use data= and x= parameters for modern seaborn API
+sns.histplot(data=tips, x='total_bill', bins=30, kde=True, stat='density', ax=ax, color='C2')
 ax.set_title('Distribution of total bill (tips dataset)')
 ```
 

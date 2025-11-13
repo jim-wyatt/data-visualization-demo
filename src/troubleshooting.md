@@ -14,14 +14,15 @@
 3. Check available system memory; large datashader computations consume RAM.
 4. Update Jupyter: `pip install --upgrade jupyter ipykernel`.
 
-#### "ImportError: No module named 'X'"
+#### "ImportError: No module named 'X'" or "ModuleNotFoundError"
 
-**Symptoms:** A cell fails with `ImportError` for a library.
+**Symptoms:** A cell fails with `ImportError` or `ModuleNotFoundError` for a library.
 
 **Solutions:**
-1. Install the missing package: `pip install <package_name>`.
-2. Ensure the virtual environment is activated.
-3. Restart the kernel after installing.
+1. Install the missing package: `pip install <package_name>` or `pip install -r requirements.txt` for full environment.
+2. Ensure the virtual environment is activated: `which python` should show `.venv/bin/python`.
+3. Restart the kernel after installing: *Kernel* → *Restart*.
+4. Verify the package is in your environment: `pip list | grep <package_name>`.
 
 ### Plotting Issues
 
@@ -30,9 +31,10 @@
 **Symptoms:** Code runs but no plot appears in the notebook.
 
 **Solutions:**
-1. Ensure `%matplotlib inline` is in the setup cell and has been executed.
+1. Ensure `%matplotlib inline` is in the setup cell and has been executed (it's in cell 1).
 2. Verify `import matplotlib.pyplot as plt` is run before plotting.
-3. Try `plt.show()` at the end of your plotting cell (though usually not needed with `%matplotlib inline`).
+3. Confirm matplotlib backend is set: `%matplotlib inline` should precede all plotting commands.
+4. For Jupyter Lab, ensure the Lab extensions are up to date: `jupyter labextension list`.
 
 #### "No module named 'datashader'"
 

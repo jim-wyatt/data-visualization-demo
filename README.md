@@ -16,7 +16,7 @@ Quick overview
 - Near the end of the notebook there are cells that show how to export the notebook to PDF using `nbconvert`, and an automated Chromium-based HTML->PDF step if LaTeX is not present.
 
 Requirements
-- Python 3.10+ (recommended). The notebook has been developed with modern package versions; use the provided `requirements.txt` to reproduce the environment.
+- **Python 3.9+** (3.10+ recommended). The notebook has been tested with Python 3.10+ and uses modern package versions. Use the provided `requirements.txt` to reproduce the exact environment (~75 pinned dependencies including Jupyter, Matplotlib 3.10, Seaborn 0.13, Plotly 6.4, and Datashader 0.18).
 
 Install (recommended)
 1. Create and activate a virtual environment:
@@ -32,7 +32,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-System packages (optional / for full functionality)
+This installs ~75 packages including Jupyter, Matplotlib 3.10+, Seaborn 0.13+, Plotly 6.4+, Pandas 2.3+, NumPy 2.3+, and optional libraries like Datashader 0.18+. See `requirements.txt` for exact pinned versions.
 - LaTeX (for `nbconvert --to pdf`): On Debian/Ubuntu, install a minimal set required by nbconvert PDF exporter:
 
 ```bash

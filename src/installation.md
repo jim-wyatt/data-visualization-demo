@@ -36,7 +36,16 @@ With the virtual environment activated, install all required Python packages:
 pip install -r requirements.txt
 ```
 
-This installs ~70 packages including Jupyter, Matplotlib, Seaborn, Plotly, Pandas, NumPy, and optional libraries like Datashader.
+This installs ~75 packages including:
+- **Jupyter Lab / Notebook** (latest)
+- **Matplotlib 3.10.7** — static plotting
+- **Seaborn 0.13.2** — statistical visualization
+- **Plotly 6.4.0** — interactive web charts
+- **Pandas 2.3.3** — data manipulation
+- **NumPy 2.3.4** — numerical computing
+- **Datashader 0.18.2** — large dataset aggregation
+- **Statsmodels 0.14.5** — regression and statistics
+- And ~50+ supporting libraries (see `requirements.txt` for full list).
 
 ## System Packages (Optional)
 

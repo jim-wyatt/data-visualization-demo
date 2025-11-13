@@ -2,7 +2,7 @@
 
 ## Overview
 
-**nbconvert** is Jupyter's official tool for converting notebooks to various formats. Using the `--to pdf` option generates a PDF via a LaTeX intermediate.
+**nbconvert 7.16+** is Jupyter's official tool for converting notebooks to various formats. Using the `--to pdf` option generates a PDF via a LaTeX intermediate (requires Pandoc and LaTeX).
 
 ## Prerequisites
 

@@ -18,10 +18,12 @@ The notebook uses the **flights dataset** to demonstrate:
 
 ```python
 ts = fl.set_index('date')['passengers'].sort_index()
-ax.plot(ts.index, ts.values, label='passengers', color='C0')
+# Use .to_numpy() for compatibility with modern matplotlib type hints
+ax.plot(ts.index.to_numpy(), ts.to_numpy(), label='passengers', color='C0')
 rolling = ts.rolling(window=12).mean()
-ax.plot(rolling.index, rolling.values, label='12-month rolling mean', color='C1')
-ax.fill_between(ts.index, (rolling - rolling_std).values, (rolling + rolling_std).values, 
+ax.plot(rolling.index.to_numpy(), rolling.to_numpy(), label='12-month rolling mean', color='C1')
+rolling_std = ts.rolling(window=12).std()
+ax.fill_between(ts.index.to_numpy(), (rolling - rolling_std).to_numpy(), (rolling + rolling_std).to_numpy(),
                 color='C1', alpha=0.2)
 ```
 

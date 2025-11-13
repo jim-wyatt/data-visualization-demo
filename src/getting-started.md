@@ -4,9 +4,10 @@ This section covers how to set up your environment and run the notebook.
 
 ## Prerequisites
 
-- **Python 3.10 or later** (recommended)
-- **pip** (usually comes with Python)
+- **Python 3.9 or later** (3.10+ recommended)
+- **pip** (usually comes with Python; verify with `pip --version`)
 - A terminal or command prompt
+- ~2GB of disk space (for venv + dependencies)
 
 ### System Requirements
 
